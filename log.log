@@ -1,0 +1,297 @@
+2026-08-13 15:12:39,861 - INFO - Starting the program
+2026-08-13 15:12:39,861 - INFO - Analyzing the page 1
+2026-08-13 15:12:39,861 - INFO - Starting to gather links, sending request to https://www.planetminecraft.com/projects/?platform=1&monetization=0&share=schematic&p=1
+2026-08-13 15:12:39,864 - DEBUG - Starting new HTTPS connection (1): www.planetminecraft.com:443
+2026-08-13 15:12:43,929 - DEBUG - https://www.planetminecraft.com:443 "GET /projects/?platform=1&monetization=0&share=schematic&p=1 HTTP/1.1" 200 16198
+2026-08-13 15:12:44,107 - INFO - Ответ получен: URL=https://www.planetminecraft.com/projects/?platform=1&monetization=0&share=schematic&p=1, status=200, size=115609 байт
+2026-08-13 15:12:44,158 - INFO - Starting to search for links
+2026-08-13 15:12:44,163 - INFO - Links found, number of links:25
+2026-08-13 15:12:44,164 - INFO - Number of links on page 1 is 25
+2026-08-13 15:12:44,164 - INFO - Starting to proccess link number 1,https://www.planetminecraft.com/project/pilastri-di-bedrock-di-nico/
+2026-08-13 15:12:44,164 - INFO - Sending request to map https://www.planetminecraft.com/project/pilastri-di-bedrock-di-nico/
+2026-08-13 15:12:44,206 - DEBUG - https://www.planetminecraft.com:443 "GET /project/pilastri-di-bedrock-di-nico/ HTTP/1.1" 403 None
+2026-08-13 15:12:44,211 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 124, in find_download_link_and_images
+    response.raise_for_status()
+  File "C:\Users\Sanat\Desktop\minecraftML\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.planetminecraft.com/project/pilastri-di-bedrock-di-nico/
+2026-08-13 15:12:44,212 - INFO - Starting to proccess link number 2,https://www.planetminecraft.com/project/medievel-country-side-house/
+2026-08-13 15:12:44,212 - INFO - Sending request to map https://www.planetminecraft.com/project/medievel-country-side-house/
+2026-08-13 15:12:44,213 - DEBUG - Resetting dropped connection: www.planetminecraft.com
+2026-08-13 15:12:44,679 - DEBUG - https://www.planetminecraft.com:443 "GET /project/medievel-country-side-house/ HTTP/1.1" 200 17164
+2026-08-13 15:12:44,856 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/medievel-country-side-house/,
+                 Статус = 200,
+                 Длина = 90903
+                 
+2026-08-13 15:12:44,875 - INFO - Author block is found - A sweet little count
+2026-08-13 15:12:44,876 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 150, in find_download_link_and_images
+    raise ValueError("Images not found")
+ValueError: Images not found
+2026-08-13 15:12:44,877 - INFO - Starting to proccess link number 3,https://www.planetminecraft.com/project/taiga-snowy-and-plains-village-structures/
+2026-08-13 15:12:44,877 - INFO - Sending request to map https://www.planetminecraft.com/project/taiga-snowy-and-plains-village-structures/
+2026-08-13 15:12:45,149 - DEBUG - https://www.planetminecraft.com:443 "GET /project/taiga-snowy-and-plains-village-structures/ HTTP/1.1" 200 17091
+2026-08-13 15:12:45,313 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/taiga-snowy-and-plains-village-structures/,
+                 Статус = 200,
+                 Длина = 84125
+                 
+2026-08-13 15:12:45,332 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:45,333 - INFO - Starting to proccess link number 4,https://www.planetminecraft.com/project/hello-neighbor-act-1-house-6552803/
+2026-08-13 15:12:45,333 - INFO - Sending request to map https://www.planetminecraft.com/project/hello-neighbor-act-1-house-6552803/
+2026-08-13 15:12:45,711 - DEBUG - https://www.planetminecraft.com:443 "GET /project/hello-neighbor-act-1-house-6552803/ HTTP/1.1" 200 18883
+2026-08-13 15:12:46,368 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/hello-neighbor-act-1-house-6552803/,
+                 Статус = 200,
+                 Длина = 115359
+                 
+2026-08-13 15:12:46,388 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:46,389 - INFO - Starting to proccess link number 5,https://www.planetminecraft.com/project/hormiguero/
+2026-08-13 15:12:46,389 - INFO - Sending request to map https://www.planetminecraft.com/project/hormiguero/
+2026-08-13 15:12:49,452 - DEBUG - https://www.planetminecraft.com:443 "GET /project/hormiguero/ HTTP/1.1" 200 18132
+2026-08-13 15:12:49,932 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/hormiguero/,
+                 Статус = 200,
+                 Длина = 103837
+                 
+2026-08-13 15:12:49,952 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:49,953 - INFO - Starting to proccess link number 6,https://www.planetminecraft.com/project/castle-backdrop/
+2026-08-13 15:12:49,954 - INFO - Sending request to map https://www.planetminecraft.com/project/castle-backdrop/
+2026-08-13 15:12:51,301 - DEBUG - https://www.planetminecraft.com:443 "GET /project/castle-backdrop/ HTTP/1.1" 200 18139
+2026-08-13 15:12:51,689 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/castle-backdrop/,
+                 Статус = 200,
+                 Длина = 102368
+                 
+2026-08-13 15:12:51,709 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:51,710 - INFO - Starting to proccess link number 7,https://www.planetminecraft.com/project/ss-brasilium-1891-a-small-steamer-for-the-south-america-run/
+2026-08-13 15:12:51,710 - INFO - Sending request to map https://www.planetminecraft.com/project/ss-brasilium-1891-a-small-steamer-for-the-south-america-run/
+2026-08-13 15:12:52,320 - DEBUG - https://www.planetminecraft.com:443 "GET /project/ss-brasilium-1891-a-small-steamer-for-the-south-america-run/ HTTP/1.1" 200 21945
+2026-08-13 15:12:52,327 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/ss-brasilium-1891-a-small-steamer-for-the-south-america-run/,
+                 Статус = 200,
+                 Длина = 153706
+                 
+2026-08-13 15:12:52,352 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:52,353 - INFO - Starting to proccess link number 8,https://www.planetminecraft.com/project/m1a2-abrams-1-5-1-scale/
+2026-08-13 15:12:52,353 - INFO - Sending request to map https://www.planetminecraft.com/project/m1a2-abrams-1-5-1-scale/
+2026-08-13 15:12:52,858 - DEBUG - https://www.planetminecraft.com:443 "GET /project/m1a2-abrams-1-5-1-scale/ HTTP/1.1" 200 20246
+2026-08-13 15:12:52,865 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/m1a2-abrams-1-5-1-scale/,
+                 Статус = 200,
+                 Длина = 124656
+                 
+2026-08-13 15:12:52,886 - INFO - Author block is found - The
+M1 Abrams
+(/ˈeɪb
+2026-08-13 15:12:52,888 - INFO - Searching for schematic link
+2026-08-13 15:12:52,889 - INFO -  
+2026-08-13 15:12:52,890 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2026-08-13 15:12:53,684 - DEBUG - https://s3.amazonaws.com:443 "GET /static.planetminecraft.com/files/resource_media/schematic/m1a2-revos.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T055236Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=7358132e026a74f70a009a4d756db998edcf2ee37b23263ce199080742493986 HTTP/1.1" 200 5153
+2026-08-13 15:12:53,684 - INFO - Получен ответ от скачиваемой ссылки:
+                 url = https://s3.amazonaws.com/static.planetminecraft.com/files/resource_media/schematic/m1a2-revos.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T055236Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=7358132e026a74f70a009a4d756db998edcf2ee37b23263ce199080742493986,
+                 Статус = 200,
+                 Длина = 5153,
+                 Контент = b'\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xed]i\x7f\xdb\xc6\xd1_\x10\x92'
+                 
+2026-08-13 15:12:53,696 - INFO - Map description is Временно нет
+2026-08-13 15:12:53,696 - INFO - What is about to be written - len of images 12
+ link of the map https://www.planetminecraft.com/project/m1a2-abrams-1-5-1-scale/
+page 1
+ map description - Временно нет
+download link - https://s3.amazonaws.com/static.planetminecraft.com/files/resource_media/schematic/m1a2-revos.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T055236Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=7358132e026a74f70a009a4d756db998edcf2ee37b23263ce199080742493986
+2026-08-13 15:12:53,696 - INFO - Starting to proccess link number 9,https://www.planetminecraft.com/project/swordfish-ii-7018237/
+2026-08-13 15:12:53,696 - INFO - Sending request to map https://www.planetminecraft.com/project/swordfish-ii-7018237/
+2026-08-13 15:12:53,989 - DEBUG - https://www.planetminecraft.com:443 "GET /project/swordfish-ii-7018237/ HTTP/1.1" 200 19940
+2026-08-13 15:12:54,130 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/swordfish-ii-7018237/,
+                 Статус = 200,
+                 Длина = 122240
+                 
+2026-08-13 15:12:54,177 - INFO - Author block is found - Hello,
+this is a spa
+2026-08-13 15:12:54,179 - INFO - Searching for schematic link
+2026-08-13 15:12:54,179 - INFO -  
+2026-08-13 15:12:54,414 - DEBUG - https://s3.amazonaws.com:443 "GET /static.planetminecraft.com/files/resource_media/schematic/swordfishii.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T050227Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=da38801433bba80f4e3f83d5a0e974794968619397b2543377a19e39383f2df6 HTTP/1.1" 200 4326
+2026-08-13 15:12:54,414 - INFO - Получен ответ от скачиваемой ссылки:
+                 url = https://s3.amazonaws.com/static.planetminecraft.com/files/resource_media/schematic/swordfishii.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T050227Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=da38801433bba80f4e3f83d5a0e974794968619397b2543377a19e39383f2df6,
+                 Статус = 200,
+                 Длина = 4326,
+                 Контент = b'\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xed]Yl#\xc9y.\xaaE'
+                 
+2026-08-13 15:12:54,427 - INFO - Map description is Временно нет
+2026-08-13 15:12:54,428 - INFO - What is about to be written - len of images 8
+ link of the map https://www.planetminecraft.com/project/swordfish-ii-7018237/
+page 1
+ map description - Временно нет
+download link - https://s3.amazonaws.com/static.planetminecraft.com/files/resource_media/schematic/swordfishii.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T050227Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=da38801433bba80f4e3f83d5a0e974794968619397b2543377a19e39383f2df6
+2026-08-13 15:12:54,428 - INFO - Starting to proccess link number 10,https://www.planetminecraft.com/project/auto-regear-station-multi-kits-map/
+2026-08-13 15:12:54,428 - INFO - Sending request to map https://www.planetminecraft.com/project/auto-regear-station-multi-kits-map/
+2026-08-13 15:12:54,710 - DEBUG - https://www.planetminecraft.com:443 "GET /project/auto-regear-station-multi-kits-map/ HTTP/1.1" 200 19727
+2026-08-13 15:12:54,905 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/auto-regear-station-multi-kits-map/,
+                 Статус = 200,
+                 Длина = 123503
+                 
+2026-08-13 15:12:54,927 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:54,928 - INFO - Starting to proccess link number 11,https://www.planetminecraft.com/project/cave-game-7018146/
+2026-08-13 15:12:54,928 - INFO - Sending request to map https://www.planetminecraft.com/project/cave-game-7018146/
+2026-08-13 15:12:55,226 - DEBUG - https://www.planetminecraft.com:443 "GET /project/cave-game-7018146/ HTTP/1.1" 200 17259
+2026-08-13 15:12:55,374 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/cave-game-7018146/,
+                 Статус = 200,
+                 Длина = 91099
+                 
+2026-08-13 15:12:55,392 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:55,394 - INFO - Starting to proccess link number 12,https://www.planetminecraft.com/project/concrete-mixer/
+2026-08-13 15:12:55,394 - INFO - Sending request to map https://www.planetminecraft.com/project/concrete-mixer/
+2026-08-13 15:12:55,699 - DEBUG - https://www.planetminecraft.com:443 "GET /project/concrete-mixer/ HTTP/1.1" 200 19974
+2026-08-13 15:12:55,832 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/concrete-mixer/,
+                 Статус = 200,
+                 Длина = 121985
+                 
+2026-08-13 15:12:55,854 - INFO - Author block is found - a Concrete Mixer for
+2026-08-13 15:12:55,857 - INFO - Searching for schematic link
+2026-08-13 15:12:55,857 - INFO -  
+2026-08-13 15:12:56,063 - DEBUG - https://s3.amazonaws.com:443 "GET /static.planetminecraft.com/files/resource_media/schematic/concrete-mixer.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T101208Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=d05eb9c61d84c7968c20868f4ff8c03beed78ea113a6517014fbdac14993103f HTTP/1.1" 200 2023
+2026-08-13 15:12:56,063 - INFO - Получен ответ от скачиваемой ссылки:
+                 url = https://s3.amazonaws.com/static.planetminecraft.com/files/resource_media/schematic/concrete-mixer.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T101208Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=d05eb9c61d84c7968c20868f4ff8c03beed78ea113a6517014fbdac14993103f,
+                 Статус = 200,
+                 Длина = 2023,
+                 Контент = b'\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xedY]\x8c\x1bW\x15>\xf6x'
+                 
+2026-08-13 15:12:56,070 - INFO - Map description is Временно нет
+2026-08-13 15:12:56,070 - INFO - What is about to be written - len of images 3
+ link of the map https://www.planetminecraft.com/project/concrete-mixer/
+page 1
+ map description - Временно нет
+download link - https://s3.amazonaws.com/static.planetminecraft.com/files/resource_media/schematic/concrete-mixer.schem?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5VRI6NCTKXXUSGQ%2F20260813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260813T101208Z&X-Amz-SignedHeaders=host&X-Amz-Expires=23400&X-Amz-Signature=d05eb9c61d84c7968c20868f4ff8c03beed78ea113a6517014fbdac14993103f
+2026-08-13 15:12:56,071 - INFO - Starting to proccess link number 13,https://www.planetminecraft.com/project/10x10x20-ponderosa-pine-tree/
+2026-08-13 15:12:56,071 - INFO - Sending request to map https://www.planetminecraft.com/project/10x10x20-ponderosa-pine-tree/
+2026-08-13 15:12:56,723 - DEBUG - https://www.planetminecraft.com:443 "GET /project/10x10x20-ponderosa-pine-tree/ HTTP/1.1" 200 18007
+2026-08-13 15:12:56,865 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/10x10x20-ponderosa-pine-tree/,
+                 Статус = 200,
+                 Длина = 102707
+                 
+2026-08-13 15:12:56,884 - INFO - Author block is found - A Ponderosa Pine gra
+2026-08-13 15:12:56,886 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 150, in find_download_link_and_images
+    raise ValueError("Images not found")
+ValueError: Images not found
+2026-08-13 15:12:56,887 - INFO - Starting to proccess link number 14,https://www.planetminecraft.com/project/diorite-birch-tree/
+2026-08-13 15:12:56,887 - INFO - Sending request to map https://www.planetminecraft.com/project/diorite-birch-tree/
+2026-08-13 15:12:57,711 - DEBUG - https://www.planetminecraft.com:443 "GET /project/diorite-birch-tree/ HTTP/1.1" 200 18234
+2026-08-13 15:12:57,823 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/diorite-birch-tree/,
+                 Статус = 200,
+                 Длина = 104837
+                 
+2026-08-13 15:12:57,842 - INFO - Author block is found - Built this birch tre
+2026-08-13 15:12:57,843 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 150, in find_download_link_and_images
+    raise ValueError("Images not found")
+ValueError: Images not found
+2026-08-13 15:12:57,844 - INFO - Starting to proccess link number 15,https://www.planetminecraft.com/project/auto-regear-station-6kits-map-v1/
+2026-08-13 15:12:57,844 - INFO - Sending request to map https://www.planetminecraft.com/project/auto-regear-station-6kits-map-v1/
+2026-08-13 15:12:58,639 - DEBUG - https://www.planetminecraft.com:443 "GET /project/auto-regear-station-6kits-map-v1/ HTTP/1.1" 200 19360
+2026-08-13 15:12:58,833 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/auto-regear-station-6kits-map-v1/,
+                 Статус = 200,
+                 Длина = 126314
+                 
+2026-08-13 15:12:58,854 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 136, in find_download_link_and_images
+    raise ValueError(
+ValueError: Кнопка Download Schematic не найдена
+2026-08-13 15:12:58,855 - INFO - Starting to proccess link number 16,https://www.planetminecraft.com/project/massive-deciduous-tree/
+2026-08-13 15:12:58,855 - INFO - Sending request to map https://www.planetminecraft.com/project/massive-deciduous-tree/
+2026-08-13 15:12:59,433 - DEBUG - https://www.planetminecraft.com:443 "GET /project/massive-deciduous-tree/ HTTP/1.1" 200 17446
+2026-08-13 15:12:59,721 - INFO - Получен ответ от страницы карты:
+                 url = https://www.planetminecraft.com/project/massive-deciduous-tree/,
+                 Статус = 200,
+                 Длина = 91527
+                 
+2026-08-13 15:12:59,738 - INFO - Author block is found - A giant deciduous tr
+2026-08-13 15:12:59,740 - ERROR - Неожиданная ошибка
+Traceback (most recent call last):
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 197, in main
+    download_link,images,author_text = find_download_link_and_images(urljoin(domain,link['href']))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sanat\Desktop\minecraftML\data.py", line 150, in find_download_link_and_images
+    raise ValueError("Images not found")
+ValueError: Images not found
+2026-08-13 15:12:59,741 - INFO - Starting to proccess link number 17,https://www.planetminecraft.com/project/megalophobia-combs/
+2026-08-13 15:12:59,741 - INFO - Sending request to map https://www.planetminecraft.com/project/megalophobia-combs/
